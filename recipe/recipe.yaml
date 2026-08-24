@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.35.0.8"
+  version: "1.36.3.8"
 
 package:
   name: lightkube-models
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/lightkube-models/lightkube_models-${{ version }}.tar.gz
-  sha256: dbc624596a7d94e6c43c5deda972be964202e0e8f26e2ab8e61d589d710b5e22
+  sha256: f1305191951baa9ea16a6603b70f1f7d156c23a7a2777d755d2e4bd59979cb83
 
 build:
   number: 0
@@ -30,8 +30,8 @@ tests:
         - lightkube
       pip_check: true
       python_version:
-       - ${{ python_min }}.*
-       - "*"
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Models and Resources for lightkube module
